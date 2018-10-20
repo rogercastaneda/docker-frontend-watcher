@@ -3,8 +3,8 @@ Docker image to compile SASS and JS using tools like grunt, yarn, webpack, bundl
 
 ## Build
 
-`docker build -t rogercastaneda/frontend-watcher:0.1 . -f Dockerfile`
+`docker build -t rogercastaneda/frontend-watcher:0.3 . -f Dockerfile`
 
 ## Push to docker
 
-`docker push rogercastaneda/frontend-watcher:0.1`
+`docker push rogercastaneda/frontend-watcher:0.3`
