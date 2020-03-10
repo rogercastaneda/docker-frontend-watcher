@@ -1,4 +1,4 @@
-FROM node:10.12.0-alpine
+FROM node:10-alpine
 
 LABEL version="0.3"
 LABEL description="Image with tools like grunt, yarn, webpack, bundle, gulp..."
@@ -9,9 +9,9 @@ RUN \
   apk add ruby ruby-dev && \
   apk add libffi-dev && \
   apk add build-base && \
-  gem install --no-rdoc --no-ri compass bundler && \
+  gem install compass bundler && \
   apk add nodejs git && \
-  npm install -g yarn gulp && \
+  yarn global add gulp grunt grunt-cli && \
   yarn global add webpack && \
   yarn global add webpack-cli && \
   yarn global add grunt && \
